@@ -22,31 +22,40 @@ img {
 }
 
 .top-block{
+    background-color: whitesmoke;
     padding: 120px 120px 0px 50px;
     font-weight: 700;
     display: flex;
     flex-direction: column;
     font-size: 1.0rem;
-    height: 31%;
+    height: 30vh;
     gap: 0;
 }
 
 .top-text {
     margin-bottom: 20px;
+    font-size: 1.253rem;
+
+}
+.top-block p {
+    font-size: 1.253rem;
 
 }
 
 .login-block{
     padding-left: 50px;
-    background-color: azure;
     height: 35%;
+}
+.login-block section h1 {
+    font-size: 1.253rem;
 }
 
 .bottom-block {
+    background-color: whitesmoke;
     padding: 30px 0 0 50px;  
     display: flex;
     flex-direction: column;
-    height: 32%;
+    height: 30vh;
 }
 
 .create-account {
@@ -97,4 +106,25 @@ a {
     font-weight: bold;
     text-decoration: none;
     
+}
+
+
+/* for the form */
+.info-form {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 20px;
+}
+
+.username, .user-info, .password {
+    display: flex;
+    gap: 50px;
+}
+
+.user-info p, .username p, .password p {
+    display: flex;
+    flex-direction: column;
 }
