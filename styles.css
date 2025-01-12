@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body{
@@ -13,22 +14,34 @@ body{
 
 img {
     width: 33.9%;
-    height: 100vh;
+    height: 100%;
 }
+
 
 .side-page {
     display: flex;
     flex-direction: column;
 }
-
+.credit-text {
+    color: white;
+    align-self: center;
+    position: absolute;
+    bottom: 10px;
+}
+.credit-text span {
+    text-decoration: underline;
+}
 .top-block{
+    flex: 1;
     background-color: whitesmoke;
-    padding: 120px 120px 0px 50px;
     font-weight: 700;
+    padding-top: 10px;
+    padding-left: 50px; 
+    padding-right: 120px;
     display: flex;
+    justify-content: center;
     flex-direction: column;
     font-size: 1.0rem;
-    height: 30vh;
     gap: 0;
 }
 
@@ -43,19 +56,19 @@ img {
 }
 
 .login-block{
+    flex: 1;
     padding-left: 50px;
-    height: 35%;
 }
 .login-block section h1 {
     font-size: 1.253rem;
 }
 
 .bottom-block {
+    flex: 1;
     background-color: whitesmoke;
     padding: 30px 0 0 50px;  
     display: flex;
     flex-direction: column;
-    height: 30vh;
 }
 
 .create-account {
@@ -97,7 +110,7 @@ img {
     font-family:  "Norse"; 
     font-weight: 700; 
     align-self: center;
-    font-size: 5.2rem;
+    font-size: 5.4rem;
     color: white;
 
 }
@@ -127,4 +140,14 @@ a {
 .user-info p, .username p, .password p {
     display: flex;
     flex-direction: column;
+}
+.info-form div label{
+    font-size: .67rem;
+    font-weight: 550;
+}
+.info-form div input { 
+    height: 23px;
+}
+#password:invalid, #confirm-password:invalid {
+    border-color: red;
 }
