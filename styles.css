@@ -4,8 +4,13 @@
     box-sizing: border-box;
 }
 
+
 body{
     font-family: monospace;
+}
+
+button, input, select, textarea {  
+    font: inherit;
 }
 
 .whole-page{
@@ -72,13 +77,14 @@ img {
 }
 
 .create-account {
-    width: 11rem;
+    width: 215px;
     color: white;
-    font-weight: 550;
+    font-weight: 650;
+    font-size: 1rem;
     border: none;
     border-radius: 5px;
     margin-bottom: 30px;
-    padding: 0.56rem 1.2rem;
+    padding: 0.86rem 2.5rem;
     background-color: #596D48;
 }
 
@@ -124,6 +130,7 @@ a {
 
 /* for the form */
 .info-form {
+    width: 100%;
     padding-top: 20px;
     display: flex;
     flex-direction: column;
@@ -131,9 +138,15 @@ a {
     align-items: start;
     gap: 20px;
 }
+.info-form div input[type='text'],
+.info-form div input[type='email'], 
+.info-form div input[type='password'] {
+    font: inherit;
+    padding: 2px 7px 2px 7px;
+}
 
 .username, .user-info, .password {
-    display: flex;
+    display: flex; 
     gap: 50px;
 }
 
@@ -145,9 +158,21 @@ a {
     font-size: .67rem;
     font-weight: 550;
 }
-.info-form div input { 
-    height: 23px;
+.password p span {
+    display: none;
 }
-#password:invalid, #confirm-password:invalid {
-    border-color: red;
+.info-form div input { 
+    border-radius: 3px;
+    border: 1px solid grey;
+}
+
+.username input[type='text']:focus,
+.user-info input[type='email']:focus,
+.user-info input[type='text']:focus,
+.password input[type='password']:focus {
+    border: 1px solid blue;
+    outline: none;
+}
+#email[type='email']:invalid,#phone[type='text'], #password[type='password']:invalid, #confirm_password[type='password']:invalid {
+    border: 1px solid #D55C5F;
 }
